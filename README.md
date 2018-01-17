@@ -1,4 +1,8 @@
 # faceit
+
+Backend
+
+
 1)Create virtual environment by using following command:
    cmd: virtualenv -p python3 ecom
 
@@ -10,3 +14,10 @@
 
 4)Install requirements
    cmd: pip install -r requirements.pip
+
+
+UI
+
+1)bower install angular
+
+2)bower install angular-route
