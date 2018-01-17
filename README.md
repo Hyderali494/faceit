@@ -1,5 +1,7 @@
 # faceit
 
+Backend
+
 sudo apt-get install python-mysqldb
 
 1)Create virtual environment by using following command:
@@ -19,3 +21,11 @@ sudo apt-get install python-mysqldb
    d) pip install pymysql
    e) pip install mysqlclient
    f) djangorestframework==3.7.7
+   cmd: pip install -r requirements.pip
+
+
+UI
+
+1)bower install angular
+
+2)bower install angular-route

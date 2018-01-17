@@ -27,7 +27,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 </head>
-<body>
+<body ng-app="myApp">
 <div class="header_top">
 	<div class="container">
 		<div class="one-fifth column row_1">
@@ -187,7 +187,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="clearfix"></div>
 	 </div>
 </div>
-<div class="single_top">
+<div class="single_top" ng-controller="LoginController">
 	 <div class="container"> 
 	    <div class="register">
 			  <div class="col-md-6 login-right">
@@ -196,14 +196,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<form>
 				  <div>
 					<span>Email Address<label>*</label></span>
-					<input type="text"> 
+					<input type="text" ng-model="username"> 
 				  </div>
 				  <div>
 					<span>Password<label>*</label></span>
-					<input type="text"> 
+					<input type="text" ng-model="password"> 
 				  </div>
 				  <a class="forgot" href="#">Forgot Your Password?</a>
-				  <input type="submit" value="Login">
+				  <input type="submit" value="Login" ng-click="login_submit()">
 			    </form>
 			   </div>
 			    <div class="col-md-6 login-left">
@@ -274,5 +274,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	    </div>
 	</div>
 </div>
+
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+        <script src="app/controllers/app.js"></script>
+        <script src="app/controllers/loginController.js"></script>
+
 </body>
 </html>		
