@@ -1,5 +1,3 @@
 *.pyc
 *.swp
 setup/ecom
-ui/bower_components
-setup/ecom
